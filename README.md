@@ -2,7 +2,7 @@
 
 A responsive React app to view photographers, filter by name/location, view their portfolio, and send inquiries.
 
-[Live Demo](https://photographer-app.vercel.app)
+[Live Demo](https://photographer-app-chi.vercel.app/)
 [photographer_list](./PhotoGraphers_List.png)
 [photographer_profile](./PhotoGrapher_Profile.png)
 
