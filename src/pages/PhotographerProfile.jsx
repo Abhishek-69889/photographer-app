@@ -35,7 +35,7 @@ function PhotographerProfile() {
 
   return (
     <div className="p-4">
-      {/* Profile Picture */}
+     
       <img
         src={data.profilePic}
         alt={data.name}
@@ -48,7 +48,6 @@ function PhotographerProfile() {
         Location: {data.location} | Price: ₹{data.price} | Rating: {data.rating}
       </p>
 
-      {/* Inquiry Button */}
       <div className="text-center my-4">
         <button
           onClick={() => setShowModal(true)}
@@ -58,16 +57,16 @@ function PhotographerProfile() {
         </button>
       </div>
 
-      {/* Gallery */}
-      <div className="my-4">
+      
+      <div className="my-4 h-120">
         <h2 className="text-xl font-semibold mb-2">Gallery</h2>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-4 w-full">
           {data.portfolio.map((img, i) => (
             <div key={i} className="w-full aspect-square overflow-hidden rounded">
               <img
                 src={img}
                 alt="Portfolio"
-                className="w-full h-full object-cover"
+                className="w-full h-100 object-cover"
               />
             </div>
           ))}
